@@ -1,0 +1,115 @@
+/*main containers*/
+
+.App,
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-story-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.stories-container {
+  display: flex;
+  max-width: 35%;
+  justify-content: center;
+  max-height: 100%;
+  padding: 1em;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin: 1em;
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(-45deg, #000, #1e1e1f, #171718, #121217);
+  transition-property: background-color;
+  background-size: 200% 250%;
+  animation: gradient 15s ease infinite;
+}
+
+.main-story-container {
+  margin-right: 0em;
+  transition: margin 0.2s ease-in-out;
+}
+.main-story-container:hover {
+  margin: 1em 0em 1em 0em;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.delete-container {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr 0fr;
+  margin: 1em;
+}
+
+.delete-button {
+  width: 100%;
+  max-width: 10%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  border-radius: 1em;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  background-color: red;
+}
+
+.delete-button:hover {
+  opacity: 0.6;
+  transition: 0.2s ease-in-out;
+}
+/**end**/
+
+/***text***/
+h1,
+h2,
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+}
+
+h2 {
+  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.35);
+}
+
+a,
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+a:hover {
+  color: #b9cddf;
+  transition: 0.2s ease-in-out;
+}
+
+a:active {
+  color: wheat;
+  transition: 0.1s ease-in-out;
+}
+
+/***end of text***/
+img {
+  min-width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 0.5em;
+}
+@media only screen and (max-width: 700px) {
+  /* For tablets: */
+  .stories-container {
+    max-width: 75%;
+  }
+}

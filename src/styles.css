@@ -1,0 +1,30 @@
+/*******imgs*******/
+
+/*******end*******/
+/****background****/
+body {
+  background: radial-gradient(circle, #363744, #131f2a, #28282a, #001429);
+  transition-property: background-color;
+  background-size: 350% 250%;
+  animation: gradient 20s ease infinite;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/****end****/
+@media only screen and (max-width: 700px) {
+  /* For tablets: */
+  .stories-container {
+    max-width: 75%;
+  }
+}
